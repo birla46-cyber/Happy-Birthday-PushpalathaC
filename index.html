@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f6">
+<meta name="description" content="A little birthday surprise made with love for Amma.">
+<title>Happy Birthday, Amma! 💗</title>
+<style>
+:root{--pink:#f7c9dc;--rose:#a34f78;--deep:#79435e;--cream:#fff9fc}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(145deg,#fff6fa,#ffe5ef 55%,#fff8fb);color:var(--deep);font-family:Georgia,'Times New Roman',serif;min-height:100vh;overflow-x:hidden}
+main{width:min(760px,calc(100% - 28px));margin:28px auto 48px;position:relative;z-index:1}
+.card{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.9);border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:0 16px 45px #b75d8220;margin:18px 0;text-align:center}
+.hero{background:linear-gradient(145deg,#fbd8e7,#fff0f6);padding:34px 22px 38px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font:600 11px Arial,sans-serif;color:#b36b8d}
+h1{font-size:clamp(38px,8vw,66px);line-height:1.04;color:var(--rose);margin:12px 0}
+h2{color:var(--rose);font-size:clamp(25px,5vw,34px);margin:0 0 16px}
+p{font-size:18px;line-height:1.75;margin:10px auto;max-width:570px}
+.subtitle{font-size:18px;color:#9d5c7e}
+.flowerline{font-size:26px;letter-spacing:8px;margin:12px}
+button{border:0;border-radius:999px;background:#a9517b;color:white;padding:14px 22px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 7px 18px #a9517b35;transition:transform .2s,background .2s}
+button:hover{transform:translateY(-2px);background:#8f3f68}
+button:focus-visible{outline:3px solid #71334f;outline-offset:4px}
+.secondary{background:#f4d3e1;color:#874465;box-shadow:none}
+.secondary:hover{background:#edbfd2}
+.letter{display:none;background:#fffafd;border:1px dashed #e6a9c3;border-radius:20px;padding:22px;margin-top:20px;text-align:left}
+.letter.show{display:block;animation:appear .45s ease}
+.signature{text-align:center;color:var(--rose);font-weight:bold}
+.cake-wrap{margin:12px auto 8px;width:min(270px,80%);filter:drop-shadow(0 12px 10px #b75d8220)}
+.cake-wrap svg{width:100%;height:auto}
+.candle-flame{transform-origin:center bottom;animation:flicker .7s infinite alternate}
+.blown .candle-flame{opacity:0;animation:none}
+.wish{min-height:30px;color:var(--rose);font-weight:bold}
+.footer{font:11px Arial,sans-serif;letter-spacing:.13em;color:#b36b8d;margin:28px 0 8px}
+.sparkle{position:fixed;pointer-events:none;opacity:.55;z-index:0;animation:float 8s ease-in-out infinite}
+.s1{top:8%;left:5%}.s2{top:20%;right:7%;animation-delay:2s}.s3{top:58%;left:3%;animation-delay:4s}.s4{top:76%;right:4%;animation-delay:1s}
+@keyframes flicker{from{transform:rotate(-7deg) scale(.95)}to{transform:rotate(7deg) scale(1.08)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-22px) rotate(14deg)}}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="sparkle s1">🌸</div><div class="sparkle s2">✨</div><div class="sparkle s3">🦋</div><div class="sparkle s4">💗</div>
+<main>
+  <section class="card hero">
+    <div class="eyebrow">A little website, made with lots of love</div>
+    <div class="flowerline">🌷 ✨ 🌷</div>
+    <h1>Happy Birthday,<br>Amma! 💗</h1>
+    <p class="subtitle">Our world is more beautiful because of you.</p>
+    <button id="letterButton" type="button" aria-expanded="false" aria-controls="letter">Open your special letter 💌</button>
+    <div class="letter" id="letter">
+      <h2 style="text-align:center">Dear Amma,</h2>
+      <p>You are our biggest blessing and our greatest strength. Thank you for every sacrifice, every hug, every prayer, and every little thing you do for us.</p>
+      <p>Your love makes our house a home. We may not say it every day, but we are grateful for you every single day.</p>
+      <p class="signature">We love you endlessly, Amma! ❤️</p>
+      <p class="signature">With all our love,<br>Your family 💗</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Make a birthday wish! 🎂</h2>
+    <div class="cake-wrap" id="cake">
+      <svg viewBox="0 0 280 220" role="img" aria-label="A pink birthday cake with three candles">
+        <ellipse cx="140" cy="194" rx="112" ry="13" fill="#edbfd2"/>
+        <rect x="42" y="112" width="196" height="78" rx="18" fill="#e99cbd"/>
+        <path d="M42 130 Q62 145 82 130 T122 130 T162 130 T202 130 T238 130 L238 151 Q218 166 198 151 T158 151 T118 151 T78 151 T42 151Z" fill="#fff4f8"/>
+        <rect x="62" y="77" width="156" height="54" rx="15" fill="#f5bfd4"/>
+        <path d="M62 93 Q80 107 98 93 T134 93 T170 93 T206 93 T218 93 L218 108 Q200 121 182 108 T146 108 T110 108 T74 108 T62 108Z" fill="#fff8fb"/>
+        <g fill="#c96f99"><circle cx="83" cy="164" r="4"/><circle cx="112" cy="178" r="4"/><circle cx="171" cy="166" r="4"/><circle cx="204" cy="178" r="4"/><circle cx="140" cy="145" r="4"/></g>
+        <g stroke="#fff8fb" stroke-width="7" stroke-linecap="round"><path d="M105 76V43"/><path d="M140 76V35"/><path d="M175 76V43"/></g>
+        <g class="candle-flame" fill="#ffb84d"><path d="M105 38 Q91 20 105 8 Q119 23 105 38Z"/><path d="M140 30 Q126 12 140 0 Q154 15 140 30Z"/><path d="M175 38 Q161 20 175 8 Q189 23 175 38Z"/></g>
+        <g fill="#fff"><path d="M88 121l4 7 8 1-6 5 1 8-7-4-7 4 1-8-6-5 8-1z"/><path d="M190 121l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></g>
+      </svg>
+    </div>
+    <p>Amma, close your eyes and make a beautiful wish!</p>
+    <button id="blowButton" type="button">Blow the candles 🕯️</button>
+    <p class="wish" id="wishMessage" aria-live="polite"></p>
+    <button class="secondary" id="againButton" type="button" hidden>Light them again ✨</button>
+  </section>
+
+  <section class="card">
+    <div class="flowerline">🌸 🦋 🌸</div>
+    <h2>A little reminder</h2>
+    <p style="font-size:clamp(23px,5vw,31px);color:#a34f78;font-weight:bold">You are loved.<br>You are precious.<br>You are our everything.</p>
+    <p>Forever our favourite person. 💞</p>
+  </section>
+  <div class="footer" style="text-align:center">MADE WITH LOVE, JUST FOR AMMA · FOREVER & ALWAYS</div>
+</main>
+<script>
+const letterButton=document.getElementById('letterButton');
+const letter=document.getElementById('letter');
+letterButton.addEventListener('click',()=>{
+  const open=letter.classList.toggle('show');
+  letterButton.setAttribute('aria-expanded',String(open));
+  letterButton.textContent=open?'Close your letter 💌':'Open your special letter 💌';
+});
+const cake=document.getElementById('cake');
+const blowButton=document.getElementById('blowButton');
+const againButton=document.getElementById('againButton');
+const wishMessage=document.getElementById('wishMessage');
+blowButton.addEventListener('click',()=>{
+  cake.classList.add('blown');
+  blowButton.hidden=true;
+  againButton.hidden=false;
+  wishMessage.textContent='🎉 Yay! May all your wishes come true, Amma! We love you! 💗';
+  confetti();
+});
+againButton.addEventListener('click',()=>{
+  cake.classList.remove('blown');
+  blowButton.hidden=false;
+  againButton.hidden=true;
+  wishMessage.textContent='Make another wish, Amma! 🌷';
+});
+function confetti(){
+  const symbols=['💗','🌸','✨','💕','🎉'];
+  for(let i=0;i<34;i++){
+    const bit=document.createElement('span');
+    bit.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    bit.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:-30px;font-size:${16+Math.random()*18}px;z-index:5;pointer-events:none;transition:transform ${2+Math.random()*2}s linear,opacity 3s;`;
+    document.body.appendChild(bit);
+    requestAnimationFrame(()=>{bit.style.transform=`translate(${(Math.random()-.5)*180}px,${window.innerHeight+80}px) rotate(${Math.random()*500}deg)`;bit.style.opacity='0'});
+    setTimeout(()=>bit.remove(),4200);
+  }
+}
+</script>
+</body>
+</html>
